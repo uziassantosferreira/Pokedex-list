@@ -37,5 +37,6 @@ class MyBeagleSetup : BeagleSdk {
     override val validatorHandler: ValidatorHandler? = null
 
     override fun registeredActions(): List<Class<Action>> = emptyList()
-    override fun registeredWidgets(): List<Class<WidgetView>> = emptyList()
+    override fun registeredWidgets(): List<Class<WidgetView>> =
+        listOf(BeagleItemPokemon::class.java as Class<WidgetView>)
 }
